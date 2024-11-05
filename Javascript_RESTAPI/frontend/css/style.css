@@ -1,0 +1,95 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1;
+}
+
+button {
+  padding: 10px 15px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px; /* Add space between buttons */
+  transition: background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+button.add {
+  background-color: #28a745; /* Green for Add button */
+}
+
+button.add:hover {
+  background-color: #218838; /* Darker green for Add button hover */
+}
+
+button.edit {
+  background-color: #007bff; /* Blue for Edit button */
+}
+
+button.edit:hover {
+  background-color: #0069d9; /* Darker blue for Edit button hover */
+}
+
+button.delete {
+  background-color: #dc3545; /* Red for Delete button */
+}
+
+button.delete:hover {
+  background-color: #c82333; /* Darker red for Delete button hover */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  background-color: #e9ecef;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  display: flex; /* Allow for flexbox layout of item and buttons */
+  justify-content: space-between; /* Space between item name and buttons */
+  align-items: center; /* Center align items vertically */
+}
+
+li button {
+  margin-left: 10px; /* Ensure there's space between the item text and buttons */
+}
+
+/* Optional: Add styles for focused state on buttons */
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue shadow for focused state */
+}

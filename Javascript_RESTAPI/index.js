@@ -2,11 +2,14 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const itemRoutes = require('./src/routes/itemRoutes');
 const errorMiddleware = require('./src/middleware/errorMiddleware'); // Load environment variables from .env file
+const cors = require('cors');
+
+
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Middleware
+app.use(cors());
 app.use(bodyParser.json());
 
 // Routes
