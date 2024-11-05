@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Chat Container */
+#chat {
+  max-width: 400px; /* Reduced max-width for a more compact chat window */
+  margin: auto;
+  background: #ffffff; /* White background for the chat box */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  overflow: hidden; /* Ensure content does not overflow */
+}
+
+/* Message List */
+ul {
+  list-style-type: none; /* Remove default list style */
+  padding: 0;
+  max-height: 500px; /* Set max height to contain messages */
+  overflow-y: auto; /* Enable scrolling for overflow */
+  margin: 0; /* Remove margin */
+}
+
+/* Message Item */
+li {
+  padding: 10px; /* Padding for message items */
+  margin: 5px 10px; /* Margin for spacing between messages */
+  border-radius: 8px; /* Rounded corners for messages */
+  position: relative; /* Position relative for potential use of pseudo-elements */
+}
+
+/* Incoming Messages */
+li.incoming {
+  background-color: #e3f2fd; /* Light blue background for incoming messages */
+  align-self: flex-start; /* Align incoming messages to the left */
+}
+
+/* Outgoing Messages */
+li.outgoing {
+  background-color: #c8e6c9; /* Light green background for outgoing messages */
+  align-self: flex-end; /* Align outgoing messages to the right */
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  border-top: 1px solid #ddd; /* Add border at the top of the form */
+}
+
+input {
+  flex: 1; /* Allow input to take remaining space */
+  padding: 10px; /* Padding for input */
+  border: none; /* Remove default border */
+  border-radius: 0; /* No rounding on the input */
+  outline: none; /* Remove outline on focus */
+  font-size: 16px; /* Font size for input */
+}
+
+input:focus {
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow on focus */
+}
+
+button {
+  padding: 10px 15px; /* Button padding */
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  border-radius: 0; /* No rounding on button */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Button font size */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+  #chat {
+      width: 90%; /* Full width on smaller screens */
+  }
+}
